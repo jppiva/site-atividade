@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+header, nav, .hero, .produtos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    justify-content: space-between;
+    padding: center;
+    padding: 1rem 2rem;
+    background-color: green;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black
+}
+
+nav {
+    gap: 2rem;
+}
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    color: black
+}
+
+nav a:hover{
+    color:white
+
+}
+
+@media (max-width: 425px) {
+    nav a{
+        font-size: 0.75rem;
+    }
+}
+
+main {
+    padding: 2rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color:rgb(14, 168, 17)
+}
+
+main p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.hero {
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.hero img {
+    width: 500px;
+    min-width: 300px;
+    border-radius: 12px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color:black
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    text-align: justify;
+    font-style: italic;
+}
+.hero-text ul {
+    text-align: left;
+    margin: 0 0 2rem 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.produtos {
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    background-color: greenyellow;
+    color: black;
+    transition: 0.3s;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+    color:white
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.card:hover {
+    transform: translate(-5px);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: green;
+    padding: 1.5rem;
+}
